@@ -1,0 +1,38 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0",
+		"typeface-roboto": "^8.0"
+	},
+	"description": "",
+	"devDependencies": {
+		"sass": "^1.80"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"homepage": "https://it.rocks",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"**/*.css",
+		"**/*.svg"
+	],
+	"keywords": [
+		"backend",
+		"it.rocks"
+	],
+	"license": "LGPL-3.0-or-later",
+	"name": "@itrocks/ux-core",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/ux-core.git"
+	},
+	"scripts": {
+		"build": "sass --no-source-map css/:css/"
+	},
+	"version": "0.0.1"
+}

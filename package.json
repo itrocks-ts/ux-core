@@ -9,7 +9,7 @@
 	},
 	"description": "",
 	"devDependencies": {
-		"sass": "^1.80"
+		"sass": "^1.83"
 	},
 	"engines": {
 		"node": ">=18"
@@ -32,7 +32,7 @@
 		"url": "git+https://github.com/itrocks-ts/ux-core.git"
 	},
 	"scripts": {
-		"build": "sass --no-source-map css/:css/"
+		"build": "sass --no-source-map css:css"
 	},
-	"version": "0.0.1"
+	"version": "0.0.2"
 }

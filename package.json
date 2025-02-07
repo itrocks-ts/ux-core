@@ -5,7 +5,7 @@
 	},
 	"dependencies": {
 		"normalize.css": "^8.0",
-		"typeface-roboto": "^8.0"
+		"typeface-roboto": "^1.1"
 	},
 	"description": "UI component providing a basic it.rocks app container with navigation, title bar, and logout support",
 	"devDependencies": {
@@ -41,5 +41,5 @@
 	"scripts": {
 		"build": "sass --no-source-map css:css"
 	},
-	"version": "0.0.3"
+	"version": "0.0.4"
 }

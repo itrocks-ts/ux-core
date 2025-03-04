@@ -1,7 +1,7 @@
-@import url('../../../normalize.css/normalize.css');
-@import url('../../../typeface-roboto/index.css');
-@import url('body.scss');
-@import url('global.scss');
-@import url('global-search.scss');
-@import url('menu.scss');
-@import url('user.scss');
+@use '../../../normalize.css/normalize';
+@use '../../../typeface-roboto/index';
+@use 'body';
+@use 'global';
+@use 'global-search';
+@use 'menu';
+@use 'user';

@@ -1,5 +1,5 @@
-@import url('breadcrumb.scss');
-@import url('collapse.scss');
+@use 'breadcrumb';
+@use 'collapse';
 
 body {
 	display: grid;

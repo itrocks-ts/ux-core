@@ -29,6 +29,10 @@ body {
 
 	> .menu {
 		grid-area: menu;
+
+		> ul > li.administration > h3 {
+			background-image: url('module/administration.svg');
+		}
 	}
 
 	> .breadcrumb, > .collapse, > .menu {

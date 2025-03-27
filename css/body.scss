@@ -40,9 +40,12 @@ body {
 	}
 
 	> main {
-		border-left: 1px solid #ccc;
-		border-top: 1px solid #ccc;
 		grid-area: main;
+
+		&:not(:first-child) {
+			border-left: 1px solid #ccc;
+			border-top: 1px solid #ccc;
+		}
 	}
 
 	> footer {

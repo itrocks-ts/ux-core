@@ -1,4 +1,5 @@
 
-ul.actions > li.close {
+.action.close,
+.actions > .close {
 	background-image: url('action/close.svg');
 }

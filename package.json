@@ -41,5 +41,5 @@
 	"scripts": {
 		"build": "sass --no-source-map css:css"
 	},
-	"version": "0.0.12"
+	"version": "0.0.13"
 }

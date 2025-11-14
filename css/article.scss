@@ -1,5 +1,6 @@
 
-main > article {
+main > article,
+main > form {
 	display: grid;
 	grid-template-areas: "header" "content" "footer";
 	grid-template-rows: min-content 1fr min-content;
@@ -9,11 +10,11 @@ main > article {
 		grid-area: footer;
 	}
 
-	> header {
+	> h2, > header {
 		grid-area: header;
 	}
 
-	> :not(footer):not(header) {
+	> :not(footer, h2, header) {
 		display: block;
 		grid-area: content;
 		height: 100%;

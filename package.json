@@ -41,7 +41,7 @@
 		"url": "git+https://github.com/itrocks-ts/ux-core.git"
 	},
 	"scripts": {
-		"build": "sass --no-source-map css:css && mkdir -p css/files && cp -n ../../typeface-roboto/files/* css/files/"
+		"build": "sass --no-source-map css:css && mkdir -p css/files && cp --update=none ../../typeface-roboto/files/* css/files/"
 	},
-	"version": "0.0.14"
+	"version": "0.0.15"
 }

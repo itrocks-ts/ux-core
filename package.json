@@ -9,7 +9,7 @@
 	},
 	"description": "UI component providing a basic it.rocks app container with navigation, title bar, and logout support",
 	"devDependencies": {
-		"sass": "^1.83"
+		"sass": "^1.95"
 	},
 	"engines": {
 		"node": ">=18"
@@ -43,5 +43,5 @@
 	"scripts": {
 		"build": "sass --no-source-map css:css && mkdir -p css/files && cp --update=none ../../typeface-roboto/files/* css/files/"
 	},
-	"version": "0.0.15"
+	"version": "0.0.16"
 }

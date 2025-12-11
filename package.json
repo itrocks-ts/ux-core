@@ -30,6 +30,7 @@
 		"layout",
 		"menu",
 		"navigation",
+		"shell",
 		"sidebar",
 		"UI",
 		"UX"
@@ -43,5 +44,5 @@
 	"scripts": {
 		"build": "sass --no-source-map css:css && mkdir -p css/files && cp --update=none ../../typeface-roboto/files/* css/files/"
 	},
-	"version": "0.0.16"
+	"version": "0.0.17"
 }

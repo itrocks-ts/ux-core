@@ -9,7 +9,7 @@ body > .breadcrumb {
 	> li {
 		display: inline-block;
 
-		&:not(:first-child):before {
+		&:not(:first-child)::before {
 			content: '>';
 		}
 

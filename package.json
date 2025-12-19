@@ -44,5 +44,5 @@
 	"scripts": {
 		"build": "sass --no-source-map css:css && mkdir -p css/files && cp --update=none ../../typeface-roboto/files/* css/files/"
 	},
-	"version": "0.1.2"
+	"version": "0.1.3"
 }

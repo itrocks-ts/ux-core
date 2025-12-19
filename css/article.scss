@@ -19,6 +19,7 @@ main > form {
 		grid-area: content;
 		height: 100%;
 		overflow-y: auto;
+		overscroll-behavior: contain;
 	}
 }
 

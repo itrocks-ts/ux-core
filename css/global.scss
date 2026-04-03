@@ -23,13 +23,21 @@ html {
 	overflow: hidden;
 }
 
-input {
+button, input, select, textarea {
 	border: 1px solid #ddd;
 	border-radius: 4px;
-	color: #444;
+	color: inherit;
 	padding: .5em;
 }
 
-th {
-	font-weight: 500;
+table {
+
+	caption {
+		padding: 4px;
+	}
+
+	th {
+		font-weight: 500;
+	}
+
 }

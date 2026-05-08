@@ -11,9 +11,6 @@
 	"devDependencies": {
 		"sass": "^1.95"
 	},
-	"engines": {
-		"node": ">=18"
-	},
 	"homepage": "https://it.rocks",
 	"files": [
 		"LICENSE",
@@ -44,5 +41,5 @@
 	"scripts": {
 		"build": "sass --no-source-map css:css && mkdir -p css/files && cp --update=none ../../typeface-roboto/files/* css/files/"
 	},
-	"version": "0.2.1"
+	"version": "0.2.2"
 }

@@ -216,20 +216,22 @@ to avoid repeating the breadcrumb.
 Selectors:
 
 - `body > .collapse` – the visible button.
-- `body.collapse` – a state class applied to `body` when the layout is collapsed.
+- `body.collapse` – the desktop collapsed state.
+- `body.expand` – the mobile expanded state.
 
-Behaviour (purely visual, you toggle the `collapse` class yourself via JS):
+Behaviour (purely visual, JavaScript toggles the matching responsive state):
 
 - the `.collapse` button displays a back arrow (`action/back.svg`),
-- when `body` has the `collapse` class:
+- on viewports wider than 600 pixels, when `body` has the `collapse` class:
   - the button uses a burger/menu icon (`action/menu.svg`),
   - the header and `.app.menu` sidebar are collapsed to width `0`.
-- on small screens (`max-width: 600px`), when **not** collapsed:
+- on small screens (`max-width: 600px`), the menu is closed by default so the main content is visible immediately;
+- when `body` has the `expand` class on a small screen:
   - the sidebar takes almost the full viewport width,
   - breadcrumb and `#notifications` are hidden,
   - `main` is reduced to the width of the collapse button and its content is faded out.
 
-Your JavaScript should simply add or remove the `collapse` class on `body` when the user clicks the button.
+Use `@itrocks/collapse` to toggle the matching desktop and mobile state classes.
 
 ### Article / form layout (`article.css`)
 

@@ -41,5 +41,5 @@
 	"scripts": {
 		"build": "sass --no-source-map css:css && node -e \"require('node:fs').cpSync('../../typeface-roboto/files', 'css/files', {recursive:true, force:false})\""
 	},
-	"version": "0.3.1"
+	"version": "0.3.2"
 }

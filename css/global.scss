@@ -30,6 +30,17 @@ button, input, select, textarea {
 	padding: .5em;
 }
 
+p {
+
+	&:first-child {
+		margin-block-start: 0;
+	}
+
+	&:last-child {
+		margin-block-end: 0;
+	}
+}
+
 table {
 
 	caption {

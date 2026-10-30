@@ -223,9 +223,10 @@ Behaviour (purely visual, JavaScript toggles the matching responsive state):
 
 - the `.collapse` button displays a back arrow (`action/back.svg`),
 - on viewports wider than 600 pixels, when `body` has the `collapse` class:
-  - the button uses a burger/menu icon (`action/menu.svg`),
+  - the button uses the same chevron pointing right,
   - the header and `.app.menu` sidebar are collapsed to width `0`.
-- on small screens (`max-width: 600px`), the menu is closed by default so the main content is visible immediately;
+- on small screens (`max-width: 600px`), the menu is closed by default with the chevron pointing right,
+  so the main content is visible immediately;
 - when `body` has the `expand` class on a small screen:
   - the sidebar takes almost the full viewport width,
   - breadcrumb and `#notifications` are hidden,

@@ -8,6 +8,7 @@ body {
 	> .collapse {
 		background: url('action/back.svg') center no-repeat;
 		border: none;
+		border-radius: 0;
 		cursor: pointer;
 		font-size: 0;
 		width: 24px;
@@ -20,7 +21,7 @@ body {
 	body.collapse {
 
 		> .collapse {
-			background-image: url('action/menu.svg');
+			transform: scaleX(-1);
 		}
 
 		> header, > .app.menu {
@@ -34,7 +35,7 @@ body {
 	body {
 
 		> .collapse {
-			background-image: url('action/menu.svg');
+			transform: scaleX(-1);
 		}
 
 		> header, > .app.menu {
@@ -48,7 +49,7 @@ body {
 			}
 
 			> .collapse {
-				background-image: url('action/back.svg');
+				transform: none;
 			}
 
 			> .breadcrumb, #notifications {

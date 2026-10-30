@@ -207,6 +207,10 @@ Selector: `body > .breadcrumb`.
 - Expected element: `<ol class="breadcrumb">` or `<ul class="breadcrumb">`.
 - Children: list items (`<li>`) optionally containing links.
 - A `>` separator is automatically added between items using `::before`.
+- List items carrying `hidden` remain hidden, including their separator.
+- Links carrying `data-modified="false"` use bold text; `data-modified="true"` uses normal weight.
+  Ancestor links carrying `data-active="false"` also use normal weight; only the loaded list is emphasised.
+  These state styles are included in the application stylesheet and need no modal stylesheet.
 
 Additionally, for content pages, the internal `h2` titles inside `main` headers are hidden at the top level
 to avoid repeating the breadcrumb.

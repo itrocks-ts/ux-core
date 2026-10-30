@@ -9,6 +9,8 @@ body > .breadcrumb {
 	> li {
 		display: inline-block;
 
+		&[hidden] { display: none; }
+
 		&:not(:first-child)::before {
 			content: '>';
 		}
@@ -16,8 +18,16 @@ body > .breadcrumb {
 		> a {
 			display: inline-block;
 			padding: .6em;
+
+			&[data-modified] {
+				font-weight: bold;
+				touch-action: manipulation;
+				user-select: none;
+				&[data-active=false], &[data-modified=true] { font-weight: normal; }
+			}
 		}
 	}
+
 }
 
 body > main > * > h2,

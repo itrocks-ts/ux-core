@@ -209,6 +209,7 @@ Selector: `body > .breadcrumb`.
 - A `>` separator is automatically added between items using `::before`.
 - List items carrying `hidden` remain hidden, including their separator.
 - Links carrying `data-modified="false"` use bold text; `data-modified="true"` uses normal weight.
+  Modified links display `*` through `::after`, leaving their text content unchanged.
   Ancestor links carrying `data-active="false"` also use normal weight; only the loaded list is emphasised.
   These state styles are included in the application stylesheet and need no modal stylesheet.
 

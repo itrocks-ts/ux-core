@@ -53,6 +53,12 @@ body {
 	}
 }
 
+@media (max-width: 600px) {
+	body {
+		grid-template-columns: min-content min-content minmax(0, 1fr);
+	}
+}
+
 .main.logo {
 	background: url('logo/itrocks.svg') center no-repeat;
 	background-size: auto calc(100% - 1em);

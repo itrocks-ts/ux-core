@@ -34,18 +34,39 @@ body {
 
 	body {
 
+		> .breadcrumb {
+			// Preserve wrapping at the closed-menu width while the grid column moves.
+			width: calc(100vw - 24px);
+		}
+
 		> .collapse {
 			transform: scaleX(-1);
 		}
 
-		> header, > .app.menu {
+		> header {
+			width: 0;
+		}
+
+		> main > * {
+			transition: opacity .1s, visibility 0s;
+		}
+
+		&:not(.expand) > .app.menu {
+			transition: width .1s, visibility 0s .1s;
+			visibility: hidden;
 			width: 0;
 		}
 
 		&.expand {
 
-			> .app.menu {
+			> .app.menu, > header {
 				width: calc(100vw - 24px);
+			}
+
+			> .breadcrumb {
+				pointer-events: none;
+				transition: visibility 0s .1s;
+				visibility: hidden;
 			}
 
 			> .collapse {
@@ -53,20 +74,19 @@ body {
 				transform: none;
 			}
 
-			> .breadcrumb, #notifications {
+			> #notifications {
 				display: none;
 			}
 
-			> header {
-				width: calc(100vw - 24px);
-			}
-
 			> main {
+				background-color: white;
 				overflow: hidden;
-				width: 24px;
+				pointer-events: none;
 
 				> * {
 					opacity: 0;
+					transition-delay: 0s, .1s;
+					visibility: hidden;
 				}
 			}
 		}
